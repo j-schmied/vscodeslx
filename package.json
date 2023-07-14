@@ -1,0 +1,24 @@
+{
+  "name": "slx",
+  "displayName": "Wolverine Software Next Generation Simulation Language",
+  "description": "Language Support for SLX",
+  "version": "0.0.1",
+  "publisher": "Jannik Schmied",
+  "author": "Jannik Schmied",
+  "engines": {
+    "vscode": "^1.67.0"
+  },
+  "contributes": {
+    "languages": [{
+      "id": "slx",
+      "aliases": ["SLX", "slx"],
+      "extensions": [".slx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "slx",
+      "scopeName": "source.slx",
+      "path": "./syntaxes/slx.tmLanguage.json"
+    }]
+  }
+}

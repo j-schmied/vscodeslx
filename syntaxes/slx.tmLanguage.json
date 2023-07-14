@@ -1,0 +1,71 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "slx",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "#support"
+		},
+		{
+			"include": "#constant"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.slx",
+					"match": "\\b(if|while|for|return|wait|until|advance|activate|reactivate|terminate|forever|switch|case|inital|actions|final|report|clear|print|fork|import|destroy)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.slx",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.slx",
+					"match": "\\\\."
+				}
+			]
+		},
+		"storage": {
+			"patterns": [
+				{
+					"name": "storage.type.slx",
+					"match": "\\b(int|boolean|float|double|string|pointer|enum|class|function|procedure|module|rn_stream|random_variable|rn_seed|new|tabulate)\\b"
+				},
+				{
+					"name": "storage.modifier.slx",
+					"match": "\\b(control)\\b"
+				}
+			]
+		},
+		"support": {
+			"patterns": [
+				{
+					"name": "support.type.slx",
+					"match": "\\b(typedef)\\b"
+				}
+			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.language.slx",
+					"match": "\\b(TRUE|FALSE)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.slx"
+}
