@@ -1,6 +1,6 @@
 # SLX README
 
-Syntax highlighting for Wolverine Systems SLX.
+Syntax highlighting for Wolverine Systems SLX. If you are interested, feel free to colaborate! #stongertogether
 
 ## Release Notes
 
